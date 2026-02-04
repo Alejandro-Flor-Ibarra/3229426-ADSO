@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operaciones matemáticas</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;  /* 🔹 Poner en columna (uno debajo del otro) */
+      justify-content: center; 
+      align-items: center;   
+      background-color: #e9ebee; 
+      font-family: Arial, sans-serif;
+      min-height: 100vh; /* Altura total de la ventana */
+      gap: 20px; /* espacio entre cuadros */
+      margin: 0;
+    }
+
+    .contenedor {
+      background: white; 
+      padding: 30px;
+      border-radius:40px; 
+      box-shadow: 0 4px 15px rgb(0, 0, 0);
+      width: 300px;
+      text-align: center;
+    }
+    .contenedor input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      background-color: #616654;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #088f40;
+    }
+    label {
+  display: block;        /* Cada label en una línea propia */
+  text-align: left;      /* Alinea el texto a la izquierda */
+  font-size: 14px;       /* Tamaño de texto más pequeño */
+  margin-bottom: 5px;    /* Espacio debajo del label */
+  color: #6e6e6e;           /* Color del texto */
+  font-weight: bold;     /* (Opcional) Negrita para mejor visibilidad */
+}
+
+  </style>
+</head>
+<body>
+    <div class="contenedor">
+    <div class="titulo">
+      <h1>Suma</h1>
+    </div>
+    <label for="">Ingresa dos números</label>
+    <input type="text" id="cajasuma1" placeholder="Escribe el primer número">   
+    <input type="text" id="cajasuma2" placeholder="Escribe el segundo número">
+    <button class="btn" onclick="Operaciondesuma()">Total</button>
+    <p id="elresul"></p>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulo">
+      <h1>Resta</h1>
+    </div>
+    <label for="">Ingresa dos números</label>
+    <input type="text" id="cajaresta1" placeholder="Escribe el primer número">   
+    <input type="text" id="cajaresta2" placeholder="Escribe el segundo número">
+    <button class="btn" onclick="Operacionderesta()">Total</button>
+    <p id="elresulresta"></p>
+  </div>
+  
+   <div class="contenedor">
+    <div class="titulo">
+      <h1>Multiplicación</h1>
+    </div>
+    <label for="">Ingresa dos números</label>
+    <input type="text" id="cajamulti1" placeholder="Escribe el primer número">   
+    <input type="text" id="cajamulti2" placeholder="Escribe el segundo número">
+    <button class="btn" onclick="Operacionmultiplicacion()">Total</button>
+    <p id="elresulmulti"></p>
+  </div>
+  
+   <div class="contenedor">
+    <div class="titulo">
+      <h1>División</h1>
+    </div>
+    <label for="">Ingresa dos números</label>
+    <input type="text" id="cajadiv1" placeholder="Escribe el primer número">   
+    <input type="text" id="cajadiv2" placeholder="Escribe el segundo número">
+    <button class="btn" onclick="Operaciondivision()">Total</button>
+    <p id="elresuldiv"></p>
+  </div>
+  
+
+  <script src="Backend.js">
+
+  </script>
+</body>
+</html>
